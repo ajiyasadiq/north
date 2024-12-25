@@ -48,6 +48,30 @@
       div {
         margin: 20px;
       }
+      #circle {
+        width: 50px;
+        height: 50px;
+        border: solid purple;
+        border-radius: 50px;
+        position: relative;
+        animation-name: circle;
+        animation-duration: 10s;
+        background-color: purple;
+      }
+      @keyframes circle {
+        0% {
+          left: 0px;
+          background-color: purple;
+        }
+        50% {
+          left: 100px;
+          background-color: blue;
+        }
+        100% {
+          left: 200px;
+          background-color: white;
+        }
+      }
     </style>
   </head>
   <body
@@ -67,6 +91,7 @@
         <a class="menu" href="lifestyle.html">Lifestyle</a>
       </p>
       <img src="photos/logo.jpg" />
+      <div id="circle"></div>
       <form>
         <div>
           <label for="name">Full Name:</label>
