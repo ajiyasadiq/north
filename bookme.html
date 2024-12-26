@@ -57,6 +57,8 @@
         animation-name: circle;
         animation-duration: 10s;
         background-color: purple;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
       }
       @keyframes circle {
         0% {
@@ -107,7 +109,11 @@
           <input type="date" id="date" />
           <br /><br /><br />
           <label for="submit">Submit:</label>
-          <input type="submit" id="submit" />
+          <input
+            onclick="alert('Are you sure you filled the form correctly?')"
+            type="submit"
+            id="submit"
+          />
           <br /><br /><br /><br /><br />
         </div>
       </form>
